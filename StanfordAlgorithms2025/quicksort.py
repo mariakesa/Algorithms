@@ -26,7 +26,7 @@ def partition(arr, pivot_index, low, high):
     swap(arr, low, i - 1)
     return i - 1  # Return new index of the pivot
 
-def quicksort(arr, low, high, pivot_type='first'):
+def quicksort(arr, low, high, pivot_type='median'):
     if low < high:
         pivot_index = choosePivot(pivot_type, arr, low, high)
         new_pivot = partition(arr, pivot_index, low, high)
